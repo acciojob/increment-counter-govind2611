@@ -1,7 +1,12 @@
-let counter = 0; // initialize counter variable
+//your JS code here. If required.
+let display=document.getElementById("counter");
+let increment=document.getElementById("incrementBtn");
+let count=0;
 
-		function incrementCounter() {
-			alert(counter);
-			counter++; // increment counter
-			document.getElementById("counter").textContent = counter; // update counter display
-		}
+display.innerHTML=count;
+let handleIncrement=()=>{
+	alert(count);
+	count++;
+	display.innerHTML=count;
+}
+increment.addEventListener("click",handleIncrement);
